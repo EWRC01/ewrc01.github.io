@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CDN Of Bulma-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <!--JQUERY of navbar-->
+    <script src="./script.js" text="text/javascript"></script>
     <title>Document</title>
 </head>
-<body>
 
-    Test
-    
+<body>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <h1 class="title has-text-white">EWRC01</h1>
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu has-background-black has-text-centered" id="navMenu">
+                <div class="navbar-start">
+                    <a class="navbar-item has-text-white">
+                        Works
+                    </a>
+                    <a class="navbar-item has-text-white">
+                        Experience
+                    </a>
+                    <a class="navbar-item has-text-white">
+                        Studies
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button is-white is-rounded is-outlined">
+                            
+                            <strong>My CV</strong>
+                        </a>
+                    
+                    <div class="navbar-item">
+                        <a class="button is-white is-rounded is-outlined">
+                            <strong>Contact Me</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
