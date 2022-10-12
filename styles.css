@@ -14,5 +14,31 @@ svg{
 
 #spanMod{
     border-style: none;
+    color: #386E77;
 }
+
+#navContact {
+    border-bottom-style: solid;
+    border-color: black;
+    margin-top: 60px;
+}
+
+#containerNav {
+    margin-top: -3rem;
+}
+
+#avatar {
+    margin-top: rem;
+    height: 150px;
+    width: 150px;
+}
+
+#brand {
+    color:  #386E77;;
+}
+
+#modifyDiv{
+    margin-bottom: -10rem;
+}
+
 
