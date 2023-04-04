@@ -1,144 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CDN Of Bulma-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!--JQUERY of navbar-->
-    <script src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/41be745b08.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
-    <title>EWRC01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Icon-->
+    <link rel="shortcut icon" href="./resources/imgs/logo.png" type="image/x-icon">
+
+    <title>EWRC01 Pentester</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Animated CSS-->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/test.css">
+    
+
+
+
 </head>
 
 <body>
-    <!--Nav of portafolio-->
-    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item">
-                    <h1 class="title has-text-white">EWRC01</h1>
-                </a>
-                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>EWRC01</h3>
             </div>
-            <div class="navbar-menu has-background-black has-text-centered" id="navMenu">
-                <div class="navbar-start">
-                    <a class="navbar-item has-text-white has-background-black">
-                        <h1> Works</h1>
-                    </a>
-                    <a href="./studies.html" class="navbar-item has-text-white has-background-black">
-                        <h1>Studies</h1>
-                    </a>
-                    <a class="navbar-item has-text-white has-background-black">
-                        <h1>Experience</h1>
-                    </a>
+
+            <ul class="list-unstyled components">
+                <p></p>
+                <li>
+                    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+                </li>
+                <li>
+                    <a href="#blog"><i class="fa-solid fa-book"></i> Blog</a>
+                </li>
+                <li>
+                    <a href="#experience"><i class="fa-solid fa-sitemap"></i> Experience</a>
+                </li>
+                <li>
+                    <a href="#works"> <i class="fa-solid fa-briefcase"></i> Works</a>
+                </li>
+                <li>
+                    <a href="#contact"> <i class="fa-solid fa-paper-plane"></i> Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Download CV</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        </ul>
+                    </div>
                 </div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <a href="./resources/CV.pdf" download class="button is-white is-rounded is-outlined">
+            </nav>
+            <section id="home">
+                <center>
+                    <div class="container align-items-center">
+                        <div class="intro">
+                            <h1 class="animate__animated animate__bounce">
+                                EWRC01
+                            </h1>
+                            <br>
+                            <span style="color:white;">
+                                <h3>I'm a </h3>
+                                <h3 id="text-rotating">Pentester, CTF Player, Cyber Security Enthusiast</h3>
+                            </span>
+                            <ul class="social-icons light list-inline mb-0 mt-4">
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/EWRC01" target="_blank"><i
+                                            class="fa-brands fa-github fa-bounce"
+                                            style="color: #ffffff; font-size: 30px;"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-icons-media" href="https://app.hackthebox.com/profile/1230835"
+                                        target="_blank"><i class="fa-solid fa-cube fa-bounce"
+                                            style="color: #ffffff; font-size: 30px;"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-icons-media" href="https://www.linkedin.com/in/ewrc01/"
+                                        target="_blank"><i class="fa-brands fa-linkedin fa-bounce"
+                                            style="color: #ffffff; font-size: 30px;"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-icons-media" href="https://twitter.com/ewrc01" target="_blank"><i
+                                            class="fa-brands fa-twitter fa-bounce"
+                                            style="color: #ffffff; font-size: 30px;"></i></a>
+                                </li>
 
-                            <strong>My CV</strong>
-                        </a>
+                            </ul>
+                        </div>
+                    </div>
+                </center>
+            </section>
+            <div class="line"></div>
 
-                        <div class="navbar-item">
-                            <a href="./contact.html" class="button is-white is-rounded is-outlined">
-                                <strong>Contact Me</strong>
+            <section id="about">
+                <br class="container align-items-center">
+
+                    <h1>About <font color="#ffc257">Me</font>
+                    </h1>
+                    <br>
+                    <center>
+                        <img src="./resources/imgs/picme.png" height="250px" width="250px" />
+                    </center>
+
+                    <hr>
+                    <div class="card w-80" style="background-color: #302f4e;">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Presentation</h3>
+                            <h5 class="card-text" style="color:white;">Hi i'm will. I like the Tech since when i was a
+                                child, i grow up and decide to take a carrer relate to tech and for now only left me a
+                                year to got my title. In the road i learn some technologies and for now i learning Cyber
+                                Security | Pentesting | Red Team at Hack The Box</h5>
+                            <h5 class="card-text" style="color:white;">I considerate myself as a curious person,
+                                responsible and smart to find a solution :D</h5>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="card w-80" style="background-color: #302f4e;">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Certification</h3>
+                            <h5 class="card-text" style="color:white;"> I'm Certified by Microsoft | FullStack Developer in a program with innovation LATAM</h5>
+                            <h5 class="card-text" style="color:white;">I'm Certified by CISCO Networking Academy | CCNA | Python</h5>
+                            <h5 class="card-text" style="color:white;">You can see all my certs and education in <a href="https://www.linkedin.com/in/ewrc01/" target="_blank" style="color:#ffc257">LinkedIn</a></h5>
+                        </div>
+                    </div>
+
+            </section>
+            <div class="line"></div>
+            <section id="blog">
+                <div class="container">
+                    <h1>Bl<font color="#ffc257">og</font></h1>
+                    <br/>
+                    <p>See my latest Writeups:</p>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card" style="background-color: #302f4e;">
+                                    <div class="card-body">
+                                        <img class="img-fluid" src="./resources/imgs/meow.png"/>
+                                        <br/>
+                                       
+                                        <div class="card-footer">
+                                            <h2>Meow Writeup</h2>
+                                            <a href="./blog.html"
+                                            class="btn"
+                                            style="color:white; background-color: #892230;">Go to blog</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card" style="background-color: #302f4e;">
+                                    <div class="card-body">
+                                        <img class="img-fluid" height="500px" width="500px" src="./resources/imgs/spawn.png"/>
+                                        <br/>
+                                       
+                                        <div class="card-footer">
+                                            <h2>Fawn Writeup</h2>
+                                            <a href="./blog.html"
+                                             class="btn"
+                                            style="color:white; background-color: #892230;">Go to blog</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                
+            </section>
+            <div class="line"></div>
+
+            <section id="experience">
+                <div class="container">
+                    <h1>Experien<font color="#ffc257">ce</font>
+                    </h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="background-color: #302f4e;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: white;"><i class="fa-solid fa-code"
+                                            style="color: #ffffff;"></i> Freelance Software Development</h5>
+                                    <p class="card-text">At the init of my university. With some knowledge of C# and
+                                        basic stack of web Development
+                                        i start an account in some kind of differente platforms to offer my services to
+                                        people in USA, one company trust
+                                        in my habilities and i work with them in a partial contract for 6 months. I
+                                        learned a lot from this.
+                                    </p>
+                                    <p>March 2020 - July 2020</p>
+                                    <a href="https://chargehub.com/en/countries/united-states/new-jersey.html"
+                                        target="_blank" class="btn"
+                                        style="color:white; background-color: #892230;">Electronic Cars Clinic</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="background-color: #302f4e;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:white"><i class="fa-solid fa-screwdriver-wrench"
+                                            style="color: #ffffff;"></i> Technical Support</h5>
+                                    <p class="card-text">I have worked for the government in the presidential election,
+                                        my functions basicly are to teach the people how
+                                        to use the system in the important day and get some technical support to the
+                                        people with the system during the elections, this was a
+                                        good experiencie and i learned a lot from my teammates.
+                                    </p>
+                                    <p>November 2020 - April 2021</p>
+                                    <a href="https://www.tse.gob.sv/" target="_blank" class="btn"
+                                        style="color:white; background-color: #892230;">TSE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </section>
+            <div class="line"></div>
+
+            <section id="works">
+                <div class="container">
+                    <h1>Wor<font color="#ffc257">ks</font>
+                    </h1>
+                    <br>
+                    <p>I have lot of projects in University and personal, but here are the most important and related to
+                        TI: </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="mb-3" style="color:#353353">Carousel cards title </h3>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a class="btn  mb-3 mr-1" style="background-color: #892230; color: white;"
+                                href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="btn mb-3 " style="background-color: #892230; color: white;"
+                                href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-    </nav>
-    <!--Nav of portafolio-->
-    <!--Body of portafolio-->
-    <section class="hero is-white has-text-centered">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-centered">
-                    <div class="column">
-                        <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Student, C# &
-                           Front End Entry level Developer</h1>
-                        <h2 class="subtitle is-size-4-tablet">I design simple things, and i love what i do</h2>
-                        <img class="avatar" src="./resources/AvatarMaker (2).png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Body of portafolio-->
-    <section id="sectionBlue" class="hero section is-black has-text-centered is-long has-text-white">
-        <div class="container">
-            <div class="column is-centered">
-                <div class="colum is-three-fifths">
-                    <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I'm Will. Nice to meet you</h1>
-                    <h2 class="subtitle is-size-5-desktop has-text-weight-normal">Since I was a child I have been
-                        passionate about technology and the areas related to it, I have spent 4 years of my life
-                        studying computer systems and network engineering and I have had the opportunity to work
-                        remotely for a company and some personal practices that enrich my knowledge, currently I
-                        continue training as a jr frontend developer, but I hope to perform at the highest level</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-        <div class="container" style="margin-top: 5rem;">
-            <div class="columns">
-                <div class="column">
-                    <div class="hero card is-primary has-text-white has-text-centered">
-                        <div class="card-header">
-                            <div class="hero card-header-title has-text-white has-text-centered">
-                                <p>Follow Me On LinkedIn</p>
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <img class="img-fluid" alt="100%x280" height="500px" width="500px"
+                                                        src="./resources/imgs/trash.jpg">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Intelligent Trash</h4>
+                                                        <p class="card-text">This is an interesting project called
+                                                            Intelligent Trash, using IoT we developed with my teammates
+                                                            a trash we can detect the level of pollution in the
+                                                            recipient, to avoid some issues or diseases.
+                                                        </p>
+                                                        <a href="https://github.com/EWRC01/Garbage-Monitoring-System-With-IoT"
+                                                            target="_blank" class="btn"
+                                                            style="color:white; background-color: #892230;">Go to
+                                                            git</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <center>
+                                                        <img class="img" alt="100%x280" height="260px" width="260px"
+                                                            src="./resources/imgs/logoEDK.png">
+                                                    </center>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">EDK Tech Solutions</h4>
+                                                        <p class="card-text">This going to be a project who offers
+                                                            CyberSecurity Auditors, Software Development and
+                                                            Capacitation to personal in
+                                                            some certifications like ISO 27001, OSCP, EJPT.
+                                                        </p>
+                                                        <a href="https://github.com/EWRC01/Garbage-Monitoring-System-With-IoT"
+                                                            target="_blank" class="btn"
+                                                            style="color:white; background-color: #892230;">Go to
+                                                            e-commerce</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <center>
+                                                        <img class="img-fluid" alt="100%x280" height="340px"
+                                                            width="340px"
+                                                            src="./resources/imgs/ElectricCarsClinicLogo.jpeg">
+                                                    </center>
+
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Electric Cars Clinic</h4>
+                                                        <p class="card-text">A basic system inventory with the
+                                                            requeriments of client, you can add clients, parts of cars
+                                                            consult with licenseplate of the car and so much more. An
+                                                            interesting challenge for me was my first experience.
+                                                        </p>
+                                                        <a href="https://github.com/EWRC01/Electronic-Cars-Clinic-Inventory"
+                                                            target="_blank" class="btn"
+                                                            style="color:white; background-color: #892230;">Go to
+                                                            generic source code</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <center>
+                                                        <img class="img-fluid" alt="100%x280" height="300px"
+                                                            width="300px" src="./resources/imgs/riego2.jpg">
+                                                    </center>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Automatic irrigation system</h4>
+                                                        <p class="card-text">I'm currently working in an automatic
+                                                            irrigation system
+                                                            using IoT and differents sensors compatible with node MCU,
+                                                            the principal objective
+                                                            is increase the production.
+                                                        </p>
+                                                        <p>Working in it | In Course</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./resources/imgs/kali.png">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Auto BSPWM</h4>
+                                                        <p class="card-text">My Personalization of Kali Linux with a
+                                                            tile manager and a polybar
+                                                            oriented to cybersecurity and to solve machines at hack the
+                                                            box, and other functions.
+                                                        </p>
+                                                        <a href="https://github.com/EWRC01/AUTOBSPWN_EWRC01"
+                                                            target="_blank" class="btn"
+                                                            style="color:white; background-color: #892230;">Go to
+                                                            Git</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card" style="background-color: #302f4e;">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="./resources/imgs/pylogo.png">
+                                                    <br />
+                                                    <br />
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">My own NMAP with Python</h4>
+                                                        <br />
+
+                                                        <p class="card-text">With the help of Free Code Camp i'm
+                                                            currently working in my own NMAP
+                                                            an interestic project in course and i hope finish soon.
+                                                        </p>
+
+                                                        <p>Working in it | In Course</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="card-header-icon">
-                                <span class="icon">
-                                    <a href="https://www.linkedin.com/in/ewrc01/" target="_blank"
-                                        class="hero fab fa-linkedin is-size-3"></a>
-                                </span>
-                            </button>
                         </div>
                     </div>
+
                 </div>
-                <div class="column">
-                    <div class="hero card is-danger has-text-white has-text-centered">
-                        <div class="card-header">
-                            <div class="hero card-header-title has-text-white has-text-centered">
-                                <p>Follow Me On YouTube</p>
-                            </div>
-                            <button class="card-header-icon">
-                                <span class="icon">
-                                    <a href="https://www.youtube.com/channel/UCJvc-khVoJPnDI2yI-3AC5w" target="_blank"
-                                        class="hero fab fa-youtube is-size-3"></a>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            <div class="column">
-                <div class="hero card is-dark has-text-white has-text-centered">
-                    <div class="card-header">
-                        <div class="hero card-header-title has-text-white has-text-centered">
-                            <p>Follow Me On GitHub</p>
-                        </div>
-                        <button class="card-header-icon">
-                            <span class="icon">
-                                <a href="https://github.com/EWRC01" target="_blank"
-                                    class="hero fab fa-github is-size-3"></a>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </section>
+
+            <div class="line"></div>
+            <section id="contact">
+                
+                <div class="container py-4">
+                    <h1>Contact<font color="#ffc257"> Me</font></h1>
+                        <br/>
+                    <!-- Bootstrap 5 starter form -->
+                    <form id="contactForm" action="https://formspree.io/f/mdojdbzr" method="POST">
+                  
+                      <!-- Name input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" id="name" name="name"  type="text" placeholder="Name" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                      </div>
+                  
+                      <!-- Email address input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="emailAddress">Email Address</label>
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                      </div>
+                  
+                      <!-- Message input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+                  
+                      <!-- Form submissions success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">Form submission successful!</div>
+                      </div>
+                  
+                      <!-- Form submissions error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+                  
+                      <!-- Form submit button -->
+                      <div class="d-grid">
+                        <button class="btn" style="color:white; background-color: #892230;" id="submitButton" type="submit">Submit</button>
+                      </div>
+                  
+                    </form>
+                  
+                  </div>
+            </section>
+
         </div>
-        
-  
+
+        <!--JQUERY-->
+        <script src="./js/jquery-1.12.3.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <!--Morphex CSS-->
+        <script src="./Morphext/dist/morphext.min.js"></script>
+        <!--Index.js-->
+        <script src="./js/index.js"></script>
+        <!-- SB Forms JS -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--Script SRC Contact JS-->
+        <script src="./js/contact.js"
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
 </body>
 
 </html>

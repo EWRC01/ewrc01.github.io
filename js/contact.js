@@ -1,4 +1,4 @@
- const form = document.getElementById('formContact');
+const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', handleSubmit);
 
@@ -18,5 +18,3 @@ async function handleSubmit(e){
         alert('Thanks for contact me :)');
     }
 }
-
- 
