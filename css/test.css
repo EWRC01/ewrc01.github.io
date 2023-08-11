@@ -61,11 +61,13 @@ a:focus {
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
+    padding-bottom: 550px;
+    position: fixed;
     background: #353353;
     border-right: 2px solid #32304e;
     color: #fff;
     transition: all 0.3s;
+    z-index: 1;
     
     
 }
@@ -200,7 +202,7 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     #sidebar {
         margin-left: -250px;
     }
@@ -212,6 +214,70 @@ a.article:hover {
     }
 }
 
+/* Style the card section */
+
+
+/* Style the card section */
+
+
+
+/* Style the card */
+#blog .col-md-4 {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #302f4e; /* Set the background color directly here */
+}
+
+/* Center the text and buttons inside the card */
+#blog h5,
+#blog .btn {
+    text-align: center;
+}
+
+/* Style the buttons */
+#blog .btn {
+    color: white;
+    background-color: #892230;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#blog .btn:hover {
+    background-color: #6b1c1c;
+}
+
+.card {
+    background-color: #32304e;
+    color: white;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #d9d9d9;
+}
+
+.card .card-img-top {
+    border-radius: 50%; /* Make the image circular */
+    width: 180px; /* Set the width to make it smaller */
+    height: 180px; /* Set the height to make it smaller */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element */
+    margin-bottom: 10px; /* Add some space between the thumbnail and title */
+}
 
 .card-body{
     color: white;
