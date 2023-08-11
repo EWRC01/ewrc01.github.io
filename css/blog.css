@@ -1,9 +1,95 @@
-
-*{
+/* Reset and general styles */
+body {
     background-color: #353353;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    
+/* Navigation bar styles */
+.navbar {
+    background-color: #32304e;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    margin-right: 15px;
+}
+
+.navbar-text {
+    color: white;
+    font-size: 1.25rem;
+}
+
+/* Card styles */
+.card {
+    background-color: #32304e;
+    color: white;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #d9d9d9;
+}
+
+/* Footer styles */
+footer {
     background-color: #353353;
+    color: white;
+}
+
+h2 {
+    color:white;
+}
+
+.card .card-img-top {
+    border-radius: 50%; /* Make the image circular */
+    width: 100px; /* Set the width to make it smaller */
+    height: 100px; /* Set the height to make it smaller */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element */
+    margin-bottom: 10px; /* Add some space between the thumbnail and title */
+}
+
+/* Center the title */
+.card .card-title {
+    text-align: center; /* Center the title text */
+}
+
+.card .card-body .btn {
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-control {
+    border-radius: 10px; /* Rounded corners */
+    padding: 8px 12px; /* Adjust padding as needed */
+    width: 100%; /* Expand to fill available width */
+    box-shadow: none; /* Remove any box shadow */
+    transition: border-color 0.2s; /* Smooth transition for border color */
+
+    /* Customize your input background and text color */
+    background-color: #32304e;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #ffc257; /* Change border color on focus */
+    background-color: #3b394e; /* Change background color on focus */
+    color: white; /* Change text color on focus */
+    outline: none; /* Remove default focus outline */
 }

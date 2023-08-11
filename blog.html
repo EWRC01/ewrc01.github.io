@@ -4,130 +4,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Icon-->
-    <link rel="shortcut icon" href="./resources/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/blog.css">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Font Awesome JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Blog Writeups EWRC01</title>
+    <link rel="shortcut icon" href="./resources/imgs/logo.png" type="image/x-icon">
+    <title>Cybersecurity Blog</title>
 </head>
-<body style="background-color: #353353;">
-    <nav class="navbar">
-
-        
-           <a class="btn btn-dark" style="background-color: black;" href="./index.html"><i class="fas fa-arrow-left" style="background-color: black; color: white;"></i></a> 
-        
+<body>
+    <nav style="background-color: #32304e;" class="navbar ">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <span class="navbar-text">
+                Welcome to My Cybersecurity Blog | <a style="text-decoration: none; color: #ffc257;" href="./index.html"> Home </a>
+            </span>
+        </div>
     </nav>
-
+    <br/>
     <div class="container">
-      <center>
-        <h1 style="color:white">Very Easy Machines</h1>
-        <br/>
-        
-            <ul>
-                <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Meow Machine</h5>
-                      <a href="./resources/writeups/meow.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-
-                  <br/>
-
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Fawn Machine</h5>
-                      <a href="./resources/writeups/fawn.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-
-                  <br/>
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Dancing Machine</h5>
-                      <a href="./resources/writeups/dancing.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-                  <br/>
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Redeemer Machine</h5>
-                      <a href="./resources/writeups/redeemer.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-                  <br/>
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Appointment Machine</h5>
-                      <a href="./resources/writeups/appointment.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-                   <br/>
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Sequel Machine</h5>
-                      <a href="./resources/writeups/sequel.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-                  <br/>
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: white;">Crocodile Machine</h5>
-                      <a href="./resources/writeups/crocodile.html" class="btn btn-danger">See Writeup</a>
-                    </div>
-                  </div>
-                  <br/>
-            </ul>
-          </center>
-          <br/>
-          <center>
-          <h1 style="color:white">Easy Machines</h1>
-          <br/>
-          <ul>
-            <div class="card w-75">
-              <div class="card-body">
-                <h5 class="card-title" style="color: white;">Monitors Two Machine</h5>
-                <a href="./resources/writeups/monitorstwo.html" class="btn btn-danger">See Writeup</a>
-              </div>
-            
-            </div>
-
-          </ul>
-        </center>
-            <br/>
-            <center>
-            <h1 style="color:white">Medium Machines</h1>
-            <br/>
-            <ul>
-              <div class="card w-75">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Only4You Machine</h5>
-                  <a href="./resources/writeups/only4you.html" class="btn btn-danger">See Writeup</a>
-                </div>
-              </div>
-
-            </ul>
-          </center>
-          <center>
-            <h1 style="color:white">Electonic Projects</h1>
-            <br/>
-            
-                <ul>
-                    <div class="card w-75">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: white;">Smart Bottle</h5>
-                          <a href="./resources/writeups/smart-bottle.html" class="btn btn-danger">See Post</a>
-                        </div>
-                      </div>
-                      <br/>
-                </ul>
-              </center>
-              <br/>
+      <form class="form-inline ml-auto">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
     </div>
+    
+    <div class="container mt-4">
+        <!-- Very Easy Machines Section -->
+        <section class="section">
+            <h2>Very Easy Machines</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Meow Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/meow.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Meow Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            <a href="./resources/writeups/meow.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                    <!-- Fawn Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/spawn.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Fawn Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            <a href="./resources/writeups/fawn.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                    <!-- Dancing Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/dancing.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Dancing Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            <a href="./resources/writeups/dancing.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                    <!-- Redeemer Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/redeemer.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Redeemer Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            <a href="./resources/writeups/redeemer.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Appointment Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/appointment.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Appointment Machine</h5>
+                        </div>
+                        <div class="card-body">
+                        
+                            <a href="./resources/writeups/appointment.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                    <!-- Sequel Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/sequel.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Sequel Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            
+                            <a href="./resources/writeups/sequel.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                    <!-- Crocodile Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/crocodile.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Crocodile Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            
+                            <a href="./resources/writeups/crocodile.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Easy Machines Section -->
+        <section class="section">
+            <h2>Easy Machines</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Monitors Two Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/monitors.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            
+                        </div>
+                        <div class="card-title">
+                          <h5>Monitors Two Machine</h5>
+                        </div>
+                        <div class="card-body">
+                           
+                            <a href="./resources/writeups/monitorstwo.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more columns here if needed -->
+            </div>
+        </section>
+
+        <!-- Medium Machines Section -->
+        <section class="section">
+            <h2>Medium Machines</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Only4You Machine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/only4you.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                            <h5 class="card-title">Only4You Machine</h5>
+                        </div>
+                        <div class="card-body">
+                            
+                            <a href="./resources/writeups/only4you.html" class="btn btn-danger">See Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more columns here if needed -->
+            </div>
+        </section>
+
+        <!-- Electronic Projects Section -->
+        <section class="section">
+            <h2>Electronic Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Smart Bottle -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                          <img src="./resources/imgs/smart-bottle.png" alt="Meow Machine Thumbnail" class="card-img-top">
+                          
+                            <h5 class="card-title">Smart Bottle</h5>
+                          
+                            
+                        </div>
+                        <div class="card-body">
+                           
+                            <a href="./resources/writeups/smart-bottle.html" class="btn btn-danger">See Post</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more columns here if needed -->
+            </div>
+        </section>
+    </div>
+
+    <footer style="background-color: #32304e;"  class="mt-5 py-3  text-white text-center">
+        &copy; 2023 EWRC01. All rights reserved.
+    </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+    const sections = document.querySelectorAll(".section");
+
+    searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        cards.forEach(function (card) {
+            const titleElement = card.querySelector(".card-title");
+
+            console.log("Title Element:", titleElement);
+
+            if (titleElement) {
+                const title = titleElement.innerText.toLowerCase();
+
+                console.log("Title:", title);
+
+                if (title.includes(searchTerm)) {
+                    card.style.display = "block"; // Show the card
+                    sections.forEach(function (section) {
+                        if (!section.contains(card)) {
+                            section.style.display = "none"; // Hide other sections
+                        }
+                    });
+                } else {
+                    card.style.display = "none"; // Hide the card
+                    sections.forEach(function (section) {
+                        section.style.display = "block"; // Show all sections
+                    });
+                }
+            }
+        });
+    });
+});
+
+
+  </script>
 </body>
 </html>
