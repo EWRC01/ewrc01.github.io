@@ -21,10 +21,29 @@
     <link rel="stylesheet" href="./css/animate.css" />
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./css/test.css">
-    
-
-
-
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "flag_size": 24,
+            "switcher_horizontal_position": "right",
+            "switcher_vertical_position": "top",
+            "flag_style": "3d",
+            "alt_flags": { "en": "usa", "es": "mexico" },
+            "switcher_text_color": "#fff",
+            "switcher_arrow_color": "#fff",
+            "switcher_border_color": "#353353",
+            "switcher_background_color": "#353353",
+            "switcher_background_shadow_color": "#353353",
+            "switcher_background_hover_color": "#302f4e",
+            "dropdown_text_color": "#000",
+            "dropdown_hover_color": "#302f4e",
+            "dropdown_background_color": "#353353"
+        };
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
 </head>
 
 <body>
@@ -70,10 +89,11 @@
             </ul>
         </nav>
 
-
+        
 
         <!-- Page Content  -->
         <div id="content">
+
 
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container-fluid">
@@ -164,6 +184,52 @@
                 </div>
                 
             </section>
+            <div class="line">
+
+            </div>
+            <section id="tools">
+                <div class="container">
+                    <h1>Security <font style="color: #ffc257;">Tools</font></h1>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="./resources/imgs/nmap.png" alt="Nmap Tool">
+                                </div>
+                                
+                                <h3>Nmap</h3>
+                                <p>A powerful network scanning tool for discovering hosts and services.</p>
+                                <a target="_blank" href="https://nmap.org/" class="btn btn-danger">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="./resources/imgs/burpsuite.png" alt="Burp Suite Tool">
+                                </div>
+                                
+                                <h3>Burp Suite</h3>
+                                <p>An integrated platform for web application security testing.</p>
+                                <a href="https://portswigger.net/burp" target="_blank" class="btn btn-danger">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tool-card">
+                                <div class="tool-icon">
+                                    <img src="./resources/imgs/gobuster.png" alt="Gobuster Tool">
+                                </div>
+                                
+                                <h3>Gobuster</h3>
+                                <p>A directory and file brute-forcing tool for web applications.</p>
+                                <a target="_blank" href="https://www.kali.org/tools/gobuster/" class="btn btn-danger">Learn More</a>
+                            </div>
+                        </div>
+                        <!-- Add more tool cards here -->
+                    </div>
+                </div>
+            </section>
+            
             <div class="line"></div>
                 <!-- Improved Blog Section -->
     <section id="blog" class="mt-4">

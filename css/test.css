@@ -286,3 +286,87 @@ a.article:hover {
 .form-label {
     color: white;
 }
+
+/* Style the tool section */
+#tools {
+    padding: 80px 0;
+    background-color: #353353;
+}
+
+/* Style the tool cards */
+.tool-card {
+    /* Existing styles */
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #302e4c;
+    margin-bottom: 20px;
+    color: white;
+    position: relative; /* Add this for positioning */
+    transition: transform 0.2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.tool-icon img {
+    width: 100%;
+    height: auto;
+}
+
+
+.tool-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.tool-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tool-card .btn {
+    background-color: #892230;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tool-card .btn:hover {
+    background-color: #6b1c1c;
+}
+
+.gtranslate_wrapper {
+    background-color: #303030;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gtranslate_selector {
+    color: #eaeaea;
+    border-color: #161616;
+    background-color: #474747;
+}
+
+.gtranslate_dropdown {
+    color: #eaeaea;
+    background-color: #474747;
+}
+
+.gtranslate_dropdown_item:hover {
+    background-color: #748393;
+}
