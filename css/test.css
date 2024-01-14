@@ -300,7 +300,7 @@ a.article:hover {
     padding: 20px;
     border-radius: 5px;
     background-color: #302e4c;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
     position: relative; /* Add this for positioning */
     transition: transform 0.2s;
@@ -311,8 +311,8 @@ a.article:hover {
 }
 
 .tool-icon {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 15px;
